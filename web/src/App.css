@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 60px auto;
+  font-size: lighter;
+  font-family: 'Courier New', Courier, monospace;
+}
