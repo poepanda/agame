@@ -1,0 +1,13 @@
+.user-nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.user-nav a {
+  margin: 8px;
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}

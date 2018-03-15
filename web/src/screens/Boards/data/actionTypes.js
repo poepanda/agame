@@ -1,0 +1,5 @@
+export const BOARDS_GET = 'BOARDS_GET';
+export const BOARDS_GET_START = 'BOARDS_GET_START';
+export const BOARDS_GET_SUCCESS = 'BOARDS_GET_SUCCESS';
+export const BOARDS_GET_FAIL = 'BOARDS_GET_FAIL';
+

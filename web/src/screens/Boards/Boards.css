@@ -1,0 +1,18 @@
+.boards__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boards__item {
+  width: 82px;
+  height: 82px;
+  border-radius: 6px;
+  margin: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}

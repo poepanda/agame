@@ -1,12 +1,22 @@
-import React, { Component } from 'react'
-import CustomFirebaseAuth from 'app/components/CustomFirebaseAuth/CustomFirebaseAuth';
+import { connect } from 'react-redux';
 
-export default class Login extends Component {
-  render() {
-    return (
-      <div>
-        <CustomFirebaseAuth />
-      </div>
-    )
-  }
-}
+import { getUser, authenticated } from 'app/data/me/selectors';
+import { signInSuccess } from 'app/data/me/actionCreators';
+
+import Login from './Login';
+
+import './login.css';
+
+const mapStateToProps = state => ({
+  me: getUser(state),
+  authenticated: authenticated(state),
+});
+
+const mapDispatchToProps = dispatch => ({
+  signInSuccess: (user) => dispatch(signInSuccess(user))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Login);

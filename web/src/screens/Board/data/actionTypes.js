@@ -1,0 +1,5 @@
+export const TILES_GET = 'TILES_GET';
+export const TILES_GET_START = 'TILES_GET_START';
+export const TILES_GET_SUCCESS = 'TILES_GET_SUCCESS';
+export const TILES_GET_FAIL = 'TILES_GET_FAIL';
+
